@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+    /* font-weight: normal; */
+}
+
+body {
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+}
+
+
+
+footer {
+    margin-top: 100px;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+
+.bottomDiv {
+    text-align: center;
+    padding: 30px 30px;
+    height: 410px;
+}
+
+.btn{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+    font-size: 15px;
+    box-shadow: -1px 10px 7px rgb(201, 198, 198);
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    opacity: 60%;
+    /* cursor: pointer; */
+}
+
+.cancelOrder{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.cancelOrder:hover{
+    /* text-decoration: none; */
+    color: hsl(223, 47%, 23%);
+    /* font-size: 15px; */
+    /* font-weight: 900; */
+}
+
+.changeDiv{
+    display: flex;
+    align-items: center;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.changeDiv a:hover{
+    text-decoration: none;
+    opacity: 50%;
+}
+
+.d-grid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    background-color: hsl(225, 100%, 98%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.outerDiv {
+    height: 570px;
+    width: 330px;
+    box-shadow: 7px 7px 7px rgb(201, 198, 198);
+    background-color: white;
+    margin: 70px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.outerP {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.8;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.price{
+    color: hsl(224, 23%, 55%);
+}
+
+.textDiv{
+    text-align: left;
+    padding: 10px;
+}
+
+.textDiv p{
+    margin: 0;
+}
+
+.topDiv {
+    height: 160px;
+    background-image: url('images/illustration-hero.svg');
+    background-size: contain;
+}
+
+@media (min-width: 580px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-size: contain;
+    }
+
+    .bottomDiv {
+        text-align: center;
+        padding: 50px 30px;
+        height: 480px;
+    }
+
+    .d-grid{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .innerDiv {
+        height: 100px;
+        padding: 15px;
+    }
+
+    .outerDiv {
+        width: 450px;
+        height: 700px;
+    }
+
+    .outerP {
+        padding: 0 30px;
+    }
+
+    .topDiv {
+        height: 220px;
+    }
+}
